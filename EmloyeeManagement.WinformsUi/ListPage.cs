@@ -44,6 +44,7 @@ namespace EmloyeeManagement.WinformsUi
         private async void btnRefresh_Click(object sender, EventArgs e)
         {
             PAGE_NUMBER = 1;
+            txtSeach.Text = "";
             SEARCH_TEXT = "";
 
             await GetList();
