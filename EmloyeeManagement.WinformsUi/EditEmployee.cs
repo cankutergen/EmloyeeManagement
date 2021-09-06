@@ -54,7 +54,7 @@ namespace EmloyeeManagement.WinformsUi
                 var response = await _mediator.Send(new UpdateEmployeeCommand(entity));
                 if (response.Code == 200)
                 {
-                    UiHelper.ShowLabel(lblSuccess, "Successfully added");
+                    UiHelper.ShowLabel(lblSuccess, "Successfully updated");
                 }
                 else
                 {
